@@ -1,8 +1,8 @@
 {
   "name": "subscription-listener",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Subscribe to an event and dispatch it",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
