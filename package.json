@@ -1,0 +1,26 @@
+{
+  "name": "subscription-listener",
+  "version": "1.0.0",
+  "description": "Subscribe to an event and dispatch it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deflexable/subscription-listener.git"
+  },
+  "keywords": [
+    "event",
+    "listener",
+    "subscription",
+    "emitter",
+    "dispatch"
+  ],
+  "author": "Anthony Onabanjo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deflexable/subscription-listener/issues"
+  },
+  "homepage": "https://github.com/deflexable/subscription-listener#readme"
+}
