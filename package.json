@@ -1,6 +1,6 @@
 {
   "name": "subscription-listener",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Subscribe to an event and dispatch it",
   "main": "index.js",
   "type": "module",

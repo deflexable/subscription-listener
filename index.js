@@ -1,5 +1,5 @@
 
-class SubscriptionListenerBase {
+export default class SubscriptionListener {
     constructor() {
         this.listenerMap = {};
         this.lastTriggerValueMap = {};
@@ -52,33 +52,5 @@ class SubscriptionListenerBase {
 
         this.lastTriggerValueMap[key] = value;
         this.triggeredKeys[key] = true;
-    }
-};
-
-export default class SubscriptionListener extends SubscriptionListenerBase {
-    constructor() { }
-
-    get listenerMap() {
-        throw 'listenerMap is private field and non-readable';
-    }
-
-    set listenerMap(_) {
-        throw 'listenerMap is a private field and non-writable';
-    }
-
-    get lastTriggerValueMap() {
-        throw 'lastTriggerValueMap is private field and non-readable';
-    }
-
-    set lastTriggerValueMap(_) {
-        throw 'lastTriggerValueMap is a private field and non-writable';
-    }
-
-    get triggeredKeys() {
-        throw 'triggeredKeys is private field and non-readable';
-    }
-
-    set triggeredKeys(_) {
-        throw 'triggeredKeys is a private field and non-writable';
     }
 };
