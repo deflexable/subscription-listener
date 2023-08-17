@@ -1,11 +1,12 @@
 {
   "name": "subscription-listener",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Subscribe to an event and dispatch it",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files"
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/deflexable/subscription-listener/issues"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.21.5",
-    "@babel/core": "^7.21.5",
-    "@babel/node": "^7.20.7",
-    "@babel/preset-env": "^7.21.5",
-    "@babel/runtime": "^7.21.5"
   },
   "homepage": "https://github.com/deflexable/subscription-listener#readme"
 }

@@ -1,5 +1,5 @@
 
-export default class SubscriptionListener {
+class SubscriptionListener {
     constructor() {
         this.listenerMap = {};
         this.lastTriggerValueMap = {};
@@ -54,3 +54,7 @@ export default class SubscriptionListener {
         this.triggeredKeys[key] = true;
     }
 };
+
+exports['default'] = SubscriptionListener;
+
+module.exports = exports['default'];
