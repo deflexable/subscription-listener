@@ -19,7 +19,7 @@ class SubscriptionListener {
         if (useLastValue)
             setTimeout(() => {
                 if (!hasCancelled) callback?.(...(this.lastTriggerValueMap[key] || []));
-            }, 1);
+            }, 0);
 
         return () => {
             if (!hasCancelled) {
@@ -44,7 +44,7 @@ class SubscriptionListener {
             key = param[0],
             value = param.filter((_, i) => i);
 
-        if (!key) throw `expected a string in trigger() first argument but got "${key}"`;
+        if (!key) throw `expected a string in dispatch() first argument but got "${key}"`;
 
         Object.keys(this.listenerMap[key]?.triggers || {}).forEach(e => {
             this.listenerMap[key]?.triggers[e]?.(...value);
